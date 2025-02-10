@@ -40,7 +40,7 @@ retriever = neo4jvector.as_retriever()
 
 # Create the prompt
 instructions = (
-    "Use the given context to answer the question. Generate a comprehensive and succint response in numbered list form."
+    "Use the given context to answer the question. Generate a response that is relevant to the current context. Limit generated response to 3 main points"
     "If you don't know the answer, say you don't know."
     "Context: {context}"
 )
